@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://121.4.125.43:3306/test?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8001
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+
+

@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://121.4.125.43:3306/test?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8002
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+dubbo:
+  application:
+    name: dubbo_boot_user
+  registry:
+    address: 121.4.125.43:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    host: 20880
+
+
+
